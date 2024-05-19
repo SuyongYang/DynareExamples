@@ -1,0 +1,120 @@
+Starting Dynare (version 5.5).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+Initial value of the log posterior (or likelihood): 517.0239
+
+==========================================================
+   Change in the posterior covariance matrix = 10.
+   Change in the posterior mean = 0.0062338.
+   Current mode = -550.6682
+   Mode improvement = 33.6443
+   New value of jscale = 0.00067835
+==========================================================
+
+==========================================================
+   Change in the posterior covariance matrix = 0.00040118.
+   Change in the posterior mean = 0.042815.
+   Current mode = -588.6927
+   Mode improvement = 38.0245
+   New value of jscale = 2.9652
+==========================================================
+
+==========================================================
+   Change in the posterior covariance matrix = 0.00011962.
+   Change in the posterior mean = 0.017662.
+   Current mode = -588.8081
+   Mode improvement = 0.11544
+   New value of jscale = 0.82736
+==========================================================
+
+Optimal value of the scale parameter = 0.82736
+
+
+Final value of minus the log posterior (or likelihood):-588.808122 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+      prior mean     mode    s.d.  prior pstdev
+
+alpha     0.3500   0.3283  0.0089   beta 0.0200 
+beta      0.9900   0.9896  0.0020   beta 0.0020 
+delta     0.0250   0.0258  0.0030   beta 0.0030 
+chi       1.6500   1.6513  0.0206   gamm 0.0200 
+rho       0.9000   0.9481  0.0161   beta 0.0500 
+
+standard deviation of shocks
+      prior mean     mode    s.d.  prior pstdev
+
+e         0.0100   0.0096  0.0006   invg    Inf 
+
+
+Log data density [Laplace approximation] is 561.269239.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in rbcEST/metropolis\rbcEST_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 2000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 30.7%
+                                                       Chain  2: 31.65%
+Estimation::mcmc: Total number of MH draws per chain: 2000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 901.
+Estimation::mcmc: Finally I keep 1100 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e             16.819       7.959
+alpha            36.184      17.968
+beta             48.756      11.387
+delta            54.537      10.599
+chi              11.378      11.350
+rho              36.592      17.423
+
+[경고: estimation:: MCMC convergence diagnostics are not computed because the total number of iterations is not bigger than 2000!] 
+[> <a href="matlab:matlab.internal.language.introspective.errorDocCallback('McMCDiagnostics', 'C:\dynare\5.5\matlab\convergence_diagnostics\McMCDiagnostics.m', 127)" style="font-weight:bold">McMCDiagnostics</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\convergence_diagnostics\McMCDiagnostics.m',127,0)">127번 라인</a>)
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\5.5\matlab\dynare_estimation_1.m', 500)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\dynare_estimation_1.m',500,0)">500번 라인</a>)에서
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\5.5\matlab\dynare_estimation.m', 118)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\dynare_estimation.m',118,0)">118번 라인</a>)에서
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('rbcEST.driver', 'C:\Users\USER\Documents\PROGRAMMING\MATLAB\Miao_ Economic Dynamics in Discrete Time_2e\+rbcEST\driver.m', 212)" style="font-weight:bold">rbcEST.driver</a> (<a href="matlab: opentoline('C:\Users\USER\Documents\PROGRAMMING\MATLAB\Miao_ Economic Dynamics in Discrete Time_2e\+rbcEST\driver.m',212,0)">212번 라인</a>)에서
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\5.5\matlab\dynare.m', 281)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\dynare.m',281,0)">281번 라인</a>)에서] 
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 561.002434.
+
+parameters
+        prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alpha        0.350       0.3295      0.3145      0.3496     beta       0.0200
+beta         0.990       0.9894      0.9858      0.9927     beta       0.0020
+delta        0.025       0.0263      0.0211      0.0312     beta       0.0030
+chi          1.650       1.6510      1.6195      1.6877     gamm       0.0200
+rho          0.900       0.9536      0.9255      0.9776     beta       0.0500
+
+standard deviation of shocks
+        prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e            0.010       0.0098      0.0089      0.0107     invg          Inf
+Total computing time : 0h06m08s
+Note: warning(s) encountered in MATLAB/Octave code

@@ -1,0 +1,179 @@
+Starting Dynare (version 5.5).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 8 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+[경고: Some of the parameters have no value (chi) when using initial_estimation_checks. If these parameters are not initialized in a steadystate file or a
+steady_state_model-block, Dynare may not be able to solve the model. Note that simul, perfect_foresight_setup, and perfect_foresight_solver do not automatically
+call the steady state file.] 
+Initial value of the log posterior (or likelihood): 1004.2782
+
+==========================================================
+   Change in the posterior covariance matrix = 10.
+   Change in the posterior mean = 0.0023319.
+   Current mode = -1049.215
+   Mode improvement = 44.9368
+   New value of jscale = 0.00048294
+==========================================================
+
+==========================================================
+   Change in the posterior covariance matrix = 0.00015108.
+   Change in the posterior mean = 0.054346.
+   Current mode = -1143.2235
+   Mode improvement = 94.0085
+   New value of jscale = 2.3726
+==========================================================
+
+==========================================================
+   Change in the posterior covariance matrix = 4.6583e-05.
+   Change in the posterior mean = 0.0037574.
+   Current mode = -1143.2721
+   Mode improvement = 0.04856
+   New value of jscale = 0.87334
+==========================================================
+
+Optimal value of the scale parameter = 0.87334
+
+
+Final value of minus the log posterior (or likelihood):-1143.272090 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+      prior mean     mode    s.d.  prior pstdev
+
+alpha     0.3500   0.3287  0.0080   beta 0.0200 
+beta      0.9900   0.9899  0.0021   beta 0.0020 
+delta     0.0250   0.0259  0.0028   beta 0.0030 
+rho       0.9000   0.9573  0.0115   beta 0.0500 
+
+standard deviation of shocks
+      prior mean     mode    s.d.  prior pstdev
+
+e         0.0100   0.0100  0.0004   invg    Inf 
+
+
+Log data density [Laplace approximation] is 1117.854541.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in rbcEST2/metropolis\rbcEST2_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 2000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 34.7%
+                                                       Chain  2: 35.75%
+Estimation::mcmc: Total number of MH draws per chain: 2000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 901.
+Estimation::mcmc: Finally I keep 1100 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e             11.589      15.157
+alpha             9.967       6.879
+beta              3.193       5.835
+delta             9.349      17.313
+rho              20.233      11.657
+
+[경고: estimation:: MCMC convergence diagnostics are not computed because the total number of iterations is not bigger than 2000!] 
+[> <a href="matlab:matlab.internal.language.introspective.errorDocCallback('McMCDiagnostics', 'C:\dynare\5.5\matlab\convergence_diagnostics\McMCDiagnostics.m', 127)" style="font-weight:bold">McMCDiagnostics</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\convergence_diagnostics\McMCDiagnostics.m',127,0)">127번 라인</a>)
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation_1', 'C:\dynare\5.5\matlab\dynare_estimation_1.m', 500)" style="font-weight:bold">dynare_estimation_1</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\dynare_estimation_1.m',500,0)">500번 라인</a>)에서
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare_estimation', 'C:\dynare\5.5\matlab\dynare_estimation.m', 118)" style="font-weight:bold">dynare_estimation</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\dynare_estimation.m',118,0)">118번 라인</a>)에서
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('rbcEST2.driver', 'C:\Users\USER\Documents\PROGRAMMING\MATLAB\Miao_ Economic Dynamics in Discrete Time_2e\+rbcEST2\driver.m', 194)" style="font-weight:bold">rbcEST2.driver</a> (<a href="matlab: opentoline('C:\Users\USER\Documents\PROGRAMMING\MATLAB\Miao_ Economic Dynamics in Discrete Time_2e\+rbcEST2\driver.m',194,0)">194번 라인</a>)에서
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\5.5\matlab\dynare.m', 281)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\5.5\matlab\dynare.m',281,0)">281번 라인</a>)에서] 
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 1117.640725.
+
+parameters
+        prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alpha        0.350       0.3298      0.3171      0.3428     beta       0.0200
+beta         0.990       0.9897      0.9863      0.9928     beta       0.0020
+delta        0.025       0.0263      0.0219      0.0316     beta       0.0030
+rho          0.900       0.9598      0.9414      0.9792     beta       0.0500
+
+standard deviation of shocks
+        prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e            0.010       0.0101      0.0094      0.0109     invg          Inf
+
+MODEL SUMMARY
+
+  Number of variables:         8
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           3
+  Number of static variables:  4
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            0.000103
+
+POLICY AND TRANSITION FUNCTIONS
+                                  ly              lc              lk              li              lh              lw              Rk               z
+Constant                   -0.018248       -0.287306        2.177459       -1.462593       -1.098612        0.680223       -3.305054               0
+lk(-1)                      0.163233        0.535961        0.946341       -1.044060       -0.248485        0.411718       -0.836767               0
+z(-1)                       1.379764        0.439895        0.116136        4.424069        0.626579        0.753185        1.379764        0.959814
+e                           1.437532        0.458313        0.120999        4.609296        0.652813        0.784719        1.437532        1.000000
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+ly               -0.027909        0.056904        0.003238       -0.313175       -0.184411
+lc               -0.297245        0.042930        0.001843       -0.283861       -0.266050
+lk                2.163426        0.056435        0.003185       -0.265113       -0.312384
+li               -1.471350        0.126931        0.016111       -0.280320       -0.307381
+lh               -1.098426        0.016445        0.000270       -0.190315       -0.385507
+lw                0.670377        0.046613        0.002173       -0.298086       -0.219128
+Rk               -3.300540        0.038061        0.001449       -0.009207       -0.265283
+z                -0.005111        0.034857        0.001215       -0.314214       -0.195677
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         ly       lc       lk       li       lh       lw       Rk        z
+ly           1.0000   0.9154   0.8074   0.8975   0.7137   0.9690   0.3464   0.9932
+lc           0.9154   1.0000   0.9766   0.6442   0.3714   0.9865  -0.0605   0.8624
+lk           0.8074   0.9766   1.0000   0.4645   0.1629   0.9281  -0.2739   0.7333
+li           0.8975   0.6442   0.4645   1.0000   0.9494   0.7608   0.7245   0.9427
+lh           0.7137   0.3714   0.1629   0.9494   1.0000   0.5185   0.9043   0.7903
+lw           0.9690   0.9865   0.9281   0.7608   0.5185   1.0000   0.1038   0.9337
+Rk           0.3464  -0.0605  -0.2739   0.7245   0.9043   0.1038   1.0000   0.4531
+z            0.9932   0.8624   0.7333   0.9427   0.7903   0.9337   0.4531   1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+ly          0.9661  0.9351  0.9003  0.8683  0.8369
+lc          0.9926  0.9844  0.9735  0.9611  0.9472
+lk          0.9975  0.9934  0.9868  0.9781  0.9673
+li          0.9299  0.8680  0.8009  0.7421  0.6868
+lh          0.9155  0.8413  0.7612  0.6916  0.6268
+lw          0.9843  0.9688  0.9504  0.9319  0.9124
+Rk          0.9218  0.8528  0.7784  0.7133  0.6526
+z           0.9564  0.9171  0.8737  0.8345  0.7967
+Total computing time : 0h01m51s
+Note: warning(s) encountered in MATLAB/Octave code

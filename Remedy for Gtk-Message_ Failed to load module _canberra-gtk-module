@@ -1,0 +1,6 @@
+Gtk-Message: Failed to load module "canberra-gtk-module" 메세지 대처
+
+
+$ sudo apt-get install appmenu-gtk2-module appmenu-gtk3-module 
+
+$ export GTK_PATH=/usr/lib/x86_64-linux-gnu/gtk-2.0
